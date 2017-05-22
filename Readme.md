@@ -6,13 +6,13 @@
 Clone the projet
 
 ```bash
-git clone git@github.com:quentinneyraud/face-to-fesses-acte.git
+git clone git@github.com:quentinneyraud/facetofesses-atelier-acte.git
 ```
 
 Install dependencies (Yarn or npm)
 
 ```bash
-cd face-to-fesses-acte
+cd facetofesses-atelier-acte
 yarn
 ```
 
