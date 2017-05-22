@@ -65,7 +65,7 @@ const serverConfig = Object.assign({}, defaultConfig, {
     app: './server/app.js'
   },
   output: {
-    path: './build',
+    path: path.resolve('./build'),
     filename: 'server.js'
   },
   node: {
@@ -81,7 +81,7 @@ var clientConfig = Object.assign({}, defaultConfig, {
     app: './client/scripts/main.js'
   },
   output: {
-    path: './build/public',
+    path: path.resolve('./build/public'),
     filename: 'app.js'
   },
   resolve: {
