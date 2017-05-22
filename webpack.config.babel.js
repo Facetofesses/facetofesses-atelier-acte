@@ -6,6 +6,8 @@ import cssnano from 'cssnano'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import path from 'path'
 
+const isProd = process.env.NODE_ENV === 'production'
+
 const defaultConfig = {
   stats: {
     assets: true,
@@ -52,7 +54,7 @@ const defaultConfig = {
     }),
     new WebpackNotifierPlugin()
   ],
-  devtool: 'eval-cheap-module-source-map',
+  devtool: (isProd) ? false : 'eval-cheap-module-source-map',
   resolve: {
     extensions: ['.js']
   }
