@@ -22,13 +22,6 @@ yarn
 npm run dev
 ```
 
-In an other terminal window.  
-*[nodemon](https://github.com/remy/nodemon) is used to refresh server on code change*
-
-```bash
-nodemon build/server.js
-```
-
 Go to **localhost:8090/**
 
 ## Structure
